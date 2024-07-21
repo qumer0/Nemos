@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminLoginLayout.master.cs" Inherits="nemos.AdminLoginLayout" %>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gazete Sitesi</title>
+    <link rel="stylesheet" href="css/layout.css">
+    
+</head>
+<body style="background-color: #EEEEEE;">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="pictures/logo/NemosLogo.png" alt="Nemos" class="auto-style1">
+            </div>
+           
+            
+
+        </div>
+    </header>
+    <!-- Ana içerik ve diğer bölümler buraya gelecek -->
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+
+</body>
+</html>
+
+

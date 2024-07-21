@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="nemos.Layout" %>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gazete Sitesi</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <style type="text/css">
+        .auto-style1 {
+            width: 141px;
+            height: 84px;
+        }
+
+        .button {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .textbox{
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body style="background-color: #EEEEEE;">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="pictures/logo/NemosLogo.png" alt="Nemos" class="auto-style1">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="mainmenu.aspx">Anasayfa</a></li>
+                    <li><a href="etikethaber.aspx?etiket=Gündem">Gündem</a></li>
+                    <li><a href="etikethaber.aspx?etiket=Dünya">Dünya</a></li>
+                    <li><a href="etikethaber.aspx?etiket=Ekonomi">Ekonomi</a></li>
+                    <li><a href="etikethaber.aspx?etiket=Spor">Spor</a></li>
+                    <li><a href="etikethaber.aspx?etiket=Kültür-Sanat">Kültür-Sanat</a></li>
+                    <li><a href="etikethaber.aspx?etiket=Teknoloji">Teknoloji</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <form runat="server">
+                    <asp:TextBox ID="txt_box1" runat="server" CssClass="textbox"></asp:TextBox>
+                    <asp:Button ID="btn_search" runat="server" Text="Ara" CssClass="button" OnClick="btn_search_Click" />
+                </form>
+            </div>
+
+        </div>
+    </header>
+    <!-- Ana içerik ve diğer bölümler buraya gelecek -->
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+
+</body>
+</html>
+
+
